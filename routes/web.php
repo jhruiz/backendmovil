@@ -18,7 +18,7 @@ Route::get('ordentrabajos/{idVehiculo}', [	'as' => 'ordentrabajos.ordenesvehicul
 /** Obtiene una orden de trabajo especifica al recibir el id y retorna la información de la misma */
 Route::get('ordentrabajo/{id}', [	'as' => 'ordentrabajos.obtenerordentrabajo', 
 									'uses' => 'OrdentrabajosController@obtenerordentrabajo']);
-									
+/** Obtiene las imagenes que se mostraran en el inicio de la pantalla movil en la publidad principal*/							
 Route::get('header/{id}', [	'as' => 'publicidadmoviles.headerAdvertising', 
 									'uses' => 'PublicidadmovilesController@headerAdvertising']);
 									
