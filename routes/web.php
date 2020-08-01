@@ -15,7 +15,7 @@ Route::get('factura/{id}', ['as' => 'facturas.obtenerfactura', 'uses' => 'Factur
 /** Obtiene todas las ordenes de trabajo asociadas a un vehiculo **/
 Route::get('ordentrabajos/{idVehiculo}', [	'as' => 'ordentrabajos.ordenesvehiculo',
 											'uses' => 'OrdentrabajosController@ordenesvehiculo']);
-
+/** Obtiene una orden de trabajo especifica al recibir el id y retorna la información de la misma */
 Route::get('ordentrabajo/{id}', [	'as' => 'ordentrabajos.obtenerordentrabajo', 
 									'uses' => 'OrdentrabajosController@obtenerordentrabajo']);
 									
