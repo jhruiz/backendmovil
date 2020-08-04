@@ -1,5 +1,5 @@
 <?php
-echo "llega aqui"; die();
+
 use Illuminate\Support\Facades\Route;
 
 /** Ruta para obtener vehiculos por placa **/
