@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::group(['middleware' => ['cors']], function () {
 	/** Ruta para obtener vehiculos por placa **/
 	Route::get('/vehiculos/{placa?}', [	'as' => 'vehiculos.vehiculoplaca', 
 										'uses' => 'VehiculosController@vehiculoplaca']);
@@ -25,6 +24,5 @@ Route::group(['middleware' => ['cors']], function () {
 										
 	Route::get('footer/{id}', [	'as' => 'publicidadmoviles.footerAdvertising', 
 										'uses' => 'PublicidadmovilesController@footerAdvertising']);									
-										
-});
+
 
